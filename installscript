@@ -45,49 +45,16 @@ echo '----------------'
 echo install homebrew
 sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/freek/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/anthonysexton/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo 'Install node'
-echo '------------'
-brew install node
-
-echo 'Install pkg-config'
-echo '------------------'
-brew install pkg-config
-
-echo 'Install wget'
-echo '------------'
-brew install wget
-
-echo 'Install httpie'
-echo '--------------'
-brew install httpie
-
-echo 'Install ncdu'
-echo '------------'
-brew install ncdu
-
-echo 'Install hub'
-echo '-----------'
-brew install hub
-
-echo 'Install ack'
-echo '-----------'
-brew install ack
-
-echo 'Install doctl'
-echo '-------------'
-brew install doctl
-
-
-echo 'Install some nice quicklook plugins'
-echo '-----------------------------------'
-brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip  suspicious-package
-
-echo 'Install php'
-echo '-----------'
-brew install php@8.0
+echo 'Install Brewfile'
+echo '----------------'
+# Update Homebrew recipes
+brew update
+# Install all our dependencies with bundle (See Brewfile)
+brew tap homebrew/bundle
+brew bundle
 
 echo 'Install composer'
 echo '----------------'
@@ -104,25 +71,13 @@ php composer-setup.php
 rm composer-setup.php
 mv composer.phar /usr/local/bin/composer
 
-echo 'Install imagemagick'
-echo '-------------------'
-brew install imagemagick
-
 echo 'Install imagick'
 echo '---------------'
 pecl install imagick
 
-echo 'Install memcached'
-echo '-----------------'
-pecl install memcached
-
 echo 'Install xdebug'
 echo '--------------'
 pecl install xdebug
-
-echo 'Install redis'
-echo '-------------'
-pecl install redis
 
 echo 'Install laravel envoy'
 echo '---------------------'
@@ -137,26 +92,12 @@ echo '---------------------'
 composer global require laravel/valet
 valet install
 
-echo 'Install mysql'
-echo '-------------'
-brew install mysql
-brew services start mysql
+echo 'Setup Projects directory'
+echo '------------------------'
+# Create a Projects directory
+mkdir $HOME/Projects
 
-echo 'Install yarn'
-echo '------------'
-brew install yarn
 
-echo 'Install ghostscript'
-echo '-------------------'
-brew install ghostscript
-
-echo 'Install mackup'
-echo '--------------'
-brew install mackup
-
-echo 'Install zsh-autosuggestions'
-echo '---------------------------'
-brew install zsh-autosuggestions
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
