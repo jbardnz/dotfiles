@@ -86,7 +86,6 @@ cask 'quicklook-csv'
 cask 'betterzip'  
 cask 'suspicious-package'
 
-
 # Fonts
 cask 'font-lato'
 cask 'font-open-sans'
@@ -98,7 +97,6 @@ cask 'font-source-serif-pro'
 
 # Mac App Store
 # mas 'Bear', id: 
-# mas 'Cardhop', id:
 # mas 'Magnet', id: 
 # mas 'Paprika Recipe Manager 3', id:
 # mas 'Tailscale', id:
