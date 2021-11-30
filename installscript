@@ -71,23 +71,11 @@ php composer-setup.php
 rm composer-setup.php
 mv composer.phar /usr/local/bin/composer
 
-echo 'Install imagick'
-echo '---------------'
-pecl install imagick
-
-echo 'Install xdebug'
-echo '--------------'
-pecl install xdebug
-
-echo 'Install laravel envoy'
+echo 'Install Laravel Vapor'
 echo '---------------------'
-composer global require "laravel/envoy=~2.0"
+composer global require laravel/vapor-cli --update-with-dependencies
 
-echo 'Install phpunit-watcher'
-echo '-----------------------'
-composer global require spatie/phpunit-watcher
-
-echo 'Install laravel valet'
+echo 'Install Laravel valet'
 echo '---------------------'
 composer global require laravel/valet
 valet install
