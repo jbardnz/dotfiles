@@ -45,46 +45,18 @@ brew 'imagemagick'
 brew 'zsh-autosuggestions'
 
 # Apps
-cask '1password'
-cask 'appcleaner'
-cask 'asana'
-cask 'cleanshot'
-cask 'dropbox'
 cask 'dbngin'
-cask 'discord'
 cask 'docker'
 cask 'fig'
-cask 'figma'
 cask 'firefox'
-cask 'github'
 cask 'google-chrome'
-cask 'google-drive'
-cask 'imageoptim'
 cask 'insomnia'
 cask 'linear-linear'
 cask 'notion'
-cask 'quip'
-cask 'ray'
-cask 'raycast'
 cask 'slack'
-cask 'sonos'
-cask 'soulver'
-cask 'soundsource'
-cask 'superhuman'
 cask 'tableplus'
 cask 'transmit'
-cask 'visual-studio-code'
-cask 'zoom'
 
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'qlcolorcode' 
-cask 'qlstephen'  
-cask 'qlprettypatch' 
-cask 'quicklook-csv' 
-cask 'betterzip'  
-cask 'suspicious-package'
 
 # Fonts
 cask 'font-lato'
@@ -94,12 +66,4 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
-
-# Mac App Store
-# mas 'Bear', id: 
-# mas 'Magnet', id: 
-# mas 'Paprika Recipe Manager 3', id:
-# mas 'Tailscale', id:
-# mas 'Things', id: 904280696
-# mas 'Twitter', id:
 
